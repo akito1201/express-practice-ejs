@@ -19,7 +19,8 @@ router.get('/new', function(req, res, next) {
 router.post('/new', function(req, res, next) {
   const title = req.body.title;
   const summary = req.body.summary;
-  
+  console.log(req.body)
+
   con.query(
     'INSERT INTO articles (title, summary) VALUES (?, ?)',
     [title, summary],

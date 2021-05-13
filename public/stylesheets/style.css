@@ -14,8 +14,19 @@ a {
   list-style: none;
 }
 
+.article-link {
+  font-size: 20px;
+}
+
+.article-link:hover {
+  background-color: yellow;
+}
+
 .top-wrapper {
   background-color: mediumspringgreen;
+  text-align: center;
+  padding: 30px;
+  margin-top: 20px;
 }
 
 .edit-delete {
