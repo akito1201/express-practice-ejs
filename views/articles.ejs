@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <%- include('header'); %>
+    <h1>投稿一覧</h1>
+    <a href="/articles/new">新規投稿へ</a>
+    <ul>
+      <% articles.forEach((article) => { %>
+        <li class="articles">
+          <div class="edit-delete">
+            <form action="/articles/<%= article.id %>/edit" method="get">
+              <input class="delete-btn" type="submit" value="編集">
+            </form>
+            <form action="/articles/<%= article.id %>/delete" method="post">
+              <input class="delete-btn" type="submit" value="削除">
+            </form>
+          </div>
+
+          <p><%= article.title %></p>
+          <p><%= article.summary %></p>
+        </li>
+    <% }) %>
+    </ul>
+  </body>
+</html>

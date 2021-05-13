@@ -1,0 +1,28 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.articles {
+  background-color: aquamarine;
+  margin: 20px;
+  padding: 20px;
+  list-style: none;
+}
+
+.top-wrapper {
+  background-color: mediumspringgreen;
+}
+
+.edit-delete {
+  display: flex;
+  justify-content: center;
+}
+
+.delete-btn {
+  margin-left: 20px;
+}

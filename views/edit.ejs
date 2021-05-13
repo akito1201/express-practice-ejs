@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <%- include('header'); %>
+    <h1>投稿を編集する</h1>
+    <form method="POST" action="/articles/<%= article.id %>/edit">
+      <p>タイトル</p>
+      <input type="text" name="title" value=<%= article.title %>>
+      <p>要約</p>
+      <input type="text" name="summary" value=<%= article.summary %>>
+      <p><input type="submit" value="編集完了"></p>
+    </form>
+  </body>
+</html>

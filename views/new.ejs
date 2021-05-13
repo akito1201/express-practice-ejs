@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <%- include('header'); %>
+    <h1>新規投稿</h1>
+    <form method="POST" action="/articles/new">
+      <p>タイトル</p>
+      <input type="text" name="title" placeholder="タイトルを入力してください">
+      <p>要約</p>
+      <input type="text" name="summary" placeholder="要約を入力してください">
+      <p><input type="submit" value="投稿"></p>
+      
+    </form>
+  </body>
+</html>
